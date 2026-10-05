@@ -1,0 +1,15 @@
+[project]
+name = "napcat-webui-api"
+version = "0.1.0"
+description = "NapCat WebUI 内部管理接口的异步 Python 封装"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+dependencies = ["httpx>=0.24"]
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["napcat_webui*"]
